@@ -49,6 +49,13 @@ a {
   opacity: 0.8;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 2);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /* ====== Header ====== */
 .header.fixed {
   position: sticky;
@@ -398,3 +405,73 @@ a {
   font-weight: 600;
   line-height: 1.66;
 }
+
+/* ====== Feedback ====== */
+.feedback {
+  margin-top: 200px;
+  padding: 96px 0;
+  background: #2e2100;
+}
+
+.feedback-item {
+  display: flex;
+}
+
+.feedback-item .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin-right: 241px;
+}
+
+.feedback-item .title {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: Sen;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.42;
+}
+
+.feedback-item .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+.feedback-item .dots {
+  display: flex;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.feedback-item .dot.active {
+  background: var(--primary-color);
+  cursor: default;
+}
+
+.feedback-item .dot {
+  margin-right: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
+}
+
+.feedback-item blockquote {
+  padding-left: 30px;
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.54;
+}
+
+/* ====== Features ====== */
+
+/* ====== Blog ====== */
+
+/* ====== Footer ====== */
