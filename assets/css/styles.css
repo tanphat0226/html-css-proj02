@@ -45,6 +45,7 @@ a {
   border-radius: 999px;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .btn:hover {
